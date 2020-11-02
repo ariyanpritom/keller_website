@@ -1,0 +1,22 @@
+@import "variable";
+@import "function";
+@import "mixin";
+@import "base";
+@import "animation";
+@import "header";
+@import "section-feature";
+@import "section-meals";
+@import "section-killer";
+@import "section-power";
+@import "section-over";
+@import "section-plan";
+@import "section-form";
+@import "footer";
+
+
+.row {
+    max-width: 114rem;
+    margin: 0 auto;
+}
+
+

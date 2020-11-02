@@ -1,0 +1,63 @@
+.section-feature {
+    padding: 8rem;
+
+    & .section-top {
+
+        & .heading-feature {
+            font-weight: 400;
+            text-transform: uppercase;
+            letter-spacing: .1rem;
+            font-size: 3.7rem;
+            word-spacing: .2rem;
+            text-align: center;
+            margin-bottom: 5rem;
+            position: relative;
+
+            &::after {
+                content: "";
+                width: 10rem;
+                height: .2rem;
+                background-color: $color-btn;
+                position: absolute;
+                left: 45.5%;
+                bottom: -2.5rem;
+                display: inline-block;
+            }
+        }
+
+        & .text-feature {
+            line-height: 145%;
+            width: 70%;
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 5rem;
+        }
+    }
+
+    & .section-bottom {
+
+        & .box {
+            padding: 1rem;
+
+            & .icon {
+                font-size: 5.5rem;
+                color: $color-btn;
+                display: block;
+                margin-bottom: 1rem;
+            }
+
+            & .heading-feature-sub {
+                font-weight: 300;
+                text-transform: uppercase;
+                font-size: 2.2rem;
+                margin-bottom: 1.5rem;
+            }
+
+            & .text-feature-sub {
+                line-height: 145%;
+                font-size: 1.6rem;
+            }
+        }
+    }
+}

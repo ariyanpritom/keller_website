@@ -1,0 +1,90 @@
+.section-killer {
+    padding: 10rem 0;
+    background-color: $color-background;
+
+    .heading-killer {
+        font-weight: 400;
+        text-transform: uppercase;
+        letter-spacing: .1rem;
+        font-size: 3.7rem;
+        word-spacing: .2rem;
+        text-align: center;
+        margin-bottom: 5rem;
+        position: relative;
+
+        &::after {
+            content: "";
+            width: 10rem;
+            height: .2rem;
+            background-color: $color-btn;
+            position: absolute;
+            left: 46.5%;
+            bottom: -2.5rem;
+            display: inline-block;
+        }
+    }
+
+    .killer-left {
+        display: flex;
+        justify-content: flex-end;
+
+        .killer-gallery {
+            width: 40%;
+            margin-right: 5rem;
+
+            .image {
+                width: 100%;
+            }
+        }
+    }
+
+    .killer-right {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: 46.5rem;
+
+        .killer-main {
+            margin-left: 5rem;
+            display: flex;
+            align-items: center;
+
+            .heading-killer-sub {
+
+                .round {
+                    width: 5rem;
+                    height: 5rem;
+                    border: .2rem solid $color-btn;
+                    border-radius: 50%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin-right: 3rem;
+                }
+            }
+
+            .text-killer {
+                font-size: 1.8rem;
+            }
+        }
+
+        .button-killer {
+            margin-left: 5rem;
+
+            .btn-kill {
+                text-decoration: none;
+                display: inline-block;
+                height: 5rem;
+
+                &:not(:first-child) {
+                    margin-left: 1rem;
+                }
+
+                .button-image {
+                    width: auto;
+                    height: 100%;
+                }
+            }
+        }
+    }
+}

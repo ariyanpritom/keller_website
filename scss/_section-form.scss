@@ -1,0 +1,62 @@
+.section-form {
+    padding: 7.5rem 0;
+    font-size: 1.8rem;
+
+    & .heading-form {
+        font-weight: 400;
+        text-transform: uppercase;
+        letter-spacing: .1rem;
+        font-size: 3.7rem;
+        word-spacing: .2rem;
+        text-align: center;
+        margin-bottom: 5rem;
+        position: relative;
+
+        &::after {
+            content: "";
+            width: 10rem;
+            height: .2rem;
+            background-color: $color-btn;
+            position: absolute;
+            left: 50%;
+            transform: translate(-50%, 0);
+            bottom: -2.5rem;
+            display: inline-block;
+        }
+    }
+
+    & .contract-form {
+        width: 60%;
+        margin: 0 auto;
+        margin-top: 5rem;
+
+        & input[type="text"],
+        input[type="email"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 0.7rem;
+            background-repeat: 0.3rem;
+            outline: none;
+        }
+
+        & input[type=submit] {
+            margin: 3rem 0;
+            text-align: center;
+            display: inline-block;
+            padding: 1rem 3rem;
+            text-decoration: none;
+            border-radius: 20rem;
+            border: .1rem solid #cf6d17;
+            transition: all 0.2s;
+            color: $color-btn;
+            outline: none;
+
+            &:hover {
+                background-color: $color-btn;
+                color: $color-white;
+                cursor: pointer;
+            }
+        }
+    }
+}
